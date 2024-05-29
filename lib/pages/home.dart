@@ -94,7 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                     
                                     
                          ,
-                          Text('Extras:',textAlign: TextAlign.left,)
+                          
+                           Row(crossAxisAlignment:CrossAxisAlignment.start,
+                             children: [
+                               Text('Extras:',textAlign: TextAlign.left,),
+                             ],
+                           )
                          
                         
                         ,FlutGroupedButtons<String>(data:['Breakfast(10 USD/Day)',
@@ -111,7 +116,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           
                           child:
                          
-                          Text('View:')),
+                          Row(crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('View:'),
+                            ],
+                          )),
                      
                                
                           FlutGroupedButtons<String>(isRadio: true,
